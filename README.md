@@ -50,7 +50,8 @@
     <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
     
   <label for="comment">Your Comment:</label><br>
-    <textarea id="comment" name="comment" rows="5" placeholder="Write your comment here" required></textarea><br><br>
+    
+  <textarea id="comment" name="comment" rows="5" placeholder="Write your comment here" required></textarea><br><br>
     <button type="submit">Submit</button>
   </form>
 </section>
