@@ -55,6 +55,58 @@
     <button type="submit">Submit</button>
   </form>
 </section>
+<section id="animation">
+  <h2>Watch the Moving Ball!</h2>
+  <p>Here’s a fun animation of a ball that moves back and forth.</p>
+  
+  <div class="ball"></div>
+</section>
+
+<style>
+  /* Styling for the animation section */
+  #animation {
+    text-align: center;
+    margin: 50px 0;
+    padding: 20px;
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+
+  #animation h2 {
+    font-size: 24px;
+    color: #333;
+  }
+
+  #animation p {
+    font-size: 16px;
+    color: #555;
+  }
+
+  /* Create the ball */
+  .ball {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    margin: 20px auto;
+    position: relative;
+    animation: moveBall 2s linear infinite;
+  }
+
+  /* Keyframes for the animation */
+  @keyframes moveBall {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(200px); /* Moves to the right */
+    }
+    100% {
+      transform: translateX(0); /* Moves back to the start */
+    }
+  }
+</style>
   
   <footer>
     <p>&copy; 2025 [Your Name]. All Rights Reserved.</p>
